@@ -4,7 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Database Management Systems - DBMS Portfolio</title>
   <style>
-    /* General Styling */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -149,7 +148,6 @@
   <p>Check out the code for this portfolio on GitHub:</p>
   <a href="https://github.com/yourusername/Database-Management-Systems-DBMS-Portfolio" target="_blank">GitHub Repository Link</a>
 </div>
-
 <script>
   function showSection(sectionId) {
     const sections = document.querySelectorAll("section");
@@ -159,6 +157,5 @@
     document.getElementById(sectionId).classList.add("active");
   }
 </script>
-
 </body>
 </html>
