@@ -13,14 +13,12 @@
       background-color: #000; /* Black Background */
       color: #fff; /* White text for contrast */
     }
-
     header {
       background-color: #1a1a1a;
       color: white;
       padding: 20px 10px;
       text-align: center;
     }
-
     .nav-links {
       list-style: none;
       padding: 0;
@@ -29,44 +27,36 @@
       justify-content: center;
       gap: 20px;
     }
-
     .nav-links a {
       text-decoration: none;
       color: white;
       font-weight: bold;
       transition: color 0.3s;
     }
-
     .nav-links a:hover {
       color: #FFD700;
     }
-
     section {
       padding: 20px;
     }
-
     footer {
       background-color: #1a1a1a;
       color: white;
       text-align: center;
       padding: 10px;
     }
-
-    .github {
+  .github {
       text-align: center;
       margin-top: 30px;
     }
-
     .github a {
       color: #00acee;
       text-decoration: none;
       font-weight: bold;
     }
-
     .github a:hover {
       color: #FFD700;
     }
-
     .assignment {
       background-color: #1a1a1a;
       padding: 15px;
@@ -74,7 +64,6 @@
       border-radius: 8px;
       box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
     }
-
     .assignment h3 {
       color: #FFD700;
     }
