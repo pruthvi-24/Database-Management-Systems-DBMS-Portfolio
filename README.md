@@ -2,8 +2,10 @@
 <header>
   <h1>Pruthvi R | DBMS Portfolio</h1>
   <p>Semester: 3 Semester 
-     Department: Computer Science Enginnering</p>
+     Department: Computer Science Engineering</p>
      Contact : 01fe23bcs228@kletech.ac.in</p>
   </nav>
 </header>
 
+## Home Page
+Welcome to the Database Management Systems (DBMS) Portfolio. This repository showcases various DBMS projects and assignments completed during the 3rd semester of Computer Science Engineering.
