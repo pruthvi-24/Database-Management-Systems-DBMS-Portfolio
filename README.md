@@ -63,18 +63,6 @@
   <p>Check out the code for this portfolio on GitHub:</p>
   <a href="https://github.com/yourusername/Database-Management-Systems-DBMS-Portfolio" target="_blank">GitHub Repository Link</a>
 </div>
-
-<footer>
-  <p>&copy; 2024 All Rights Reserved.</p>
-</footer>
-<script>
-  function showSection(sectionId) {
-    const sections = document.querySelectorAll("section");
-    sections.forEach((section) => {
-      section.classList.remove("active");
-    });
-    document.getElementById(sectionId).classList.add("active");
-  }
 </script>
 </body>
 </html>
