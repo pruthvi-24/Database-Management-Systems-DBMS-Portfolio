@@ -7,8 +7,7 @@
   </nav>
 </header>
 
-[Home Page]
+[Home Page](https://github.com/pruthvi-24/Database-Management-Systems-DBMS-Portfolio/blob/main/Home)
 
-(https://github.com/pruthvi-24/Database-Management-Systems-DBMS-Portfolio/blob/main/Home)
 Welcome to the Database Management Systems (DBMS) Portfolio. This repository showcases various DBMS projects and assignments completed during the 3rd semester of Computer Science Engineering.
 
