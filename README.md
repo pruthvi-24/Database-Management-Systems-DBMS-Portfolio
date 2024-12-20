@@ -1,5 +1,6 @@
 <header>
-  <h1>Pruthvi R | DBMS Portfolio</h1>
+  <h1>Pruthvi R </h1>
+  <h1>DBMS Portfolio</h1>
   <p>Semester: 3 Semester | Department: Computer Science Engineering</p>
   <p>Contact: <a href="mailto:01fe23bcs228@kletech.ac.in" style="color: #FFD700;">01fe23bcs228@kletech.ac.in</a></p>
   <ul class="nav-links">
@@ -60,10 +61,5 @@
   <p>Check out the code for this portfolio on GitHub:</p>
   <a href="https://github.com/yourusername/Database-Management-Systems-DBMS-Portfolio" target="_blank">GitHub Repository Link</a>
 </div>
-
-<footer>
-  <p>&copy; 2024 Pruthvi R. All Rights Reserved.</p>
-</footer>
-
 </body>
 </html>
