@@ -1,6 +1,6 @@
 # Database-Management-Systems-DBMS-Portfolio
 <header>
-  <h1>Pruthvi R | DBMS Portfolio</h1>
+  <h1>Pruthvi R | Personal Information</h1>
   <p>Semester: 3 Semester 
      Department: Computer Science Engineering</p>
      Contact : 01fe23bcs228@kletech.ac.in</p>
