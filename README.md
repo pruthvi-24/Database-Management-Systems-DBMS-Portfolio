@@ -13,14 +13,12 @@
       background-color: #000; /* Black Background */
       color: #FFD700; /* Yellow Text */
     }
-
     header {
       background-color: #1a1a1a;
       color: #FFD700;
       padding: 20px 10px;
       text-align: center;
     }
-
     .nav-links {
       list-style: none;
       padding: 0;
@@ -29,7 +27,6 @@
       justify-content: center;
       gap: 20px;
     }
-
     .nav-links a {
       text-decoration: none;
       color: #FFD700;
@@ -39,43 +36,35 @@
       background-color: transparent;
       border-radius: 4px;
     }
-
     .nav-links a:hover {
       color: #000;
       background-color: #FFD700; /* Yellow Background on Hover */
     }
-
     section {
       display: none; /* Hide sections by default */
       padding: 20px;
     }
-
     section.active {
       display: block; /* Show the active section */
     }
-
     footer {
       background-color: #1a1a1a;
       color: #FFD700;
       text-align: center;
       padding: 10px;
     }
-
     .github {
       text-align: center;
       margin-top: 30px;
     }
-
     .github a {
       color: #FFD700; /* Yellow color for GitHub links */
       text-decoration: none;
       font-weight: bold;
     }
-
     .github a:hover {
       color: #00acee; /* Blue on hover */
     }
-
     .assignment {
       background-color: #1a1a1a;
       padding: 15px;
@@ -83,16 +72,13 @@
       border-radius: 8px;
       box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
     }
-
     .assignment h3 {
       color: #FFD700; /* Yellow for assignment titles */
     }
-
     a {
       color: #FFD700; /* Default yellow color for links */
       text-decoration: none;
     }
-
     a:hover {
       color: #00acee; /* Blue on hover for consistency */
     }
