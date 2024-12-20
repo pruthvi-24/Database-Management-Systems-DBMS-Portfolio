@@ -133,6 +133,21 @@
     <p><strong>Challenges and Solutions:</strong> Resolving partial and transitive dependencies for a large dataset.</p>
     <p><strong>Reflection:</strong> Learned how normalization improves database integrity and transaction management ensures consistency.</p>
   </div>
+
+  <div class="assignment">
+    <h3>4. Pharmaceutical Database Management</h3>
+    <p><strong>Assignment Name:</strong> "Pharmaceutical Database Management System"</p>
+    <p><strong>Description:</strong> Designed an ER diagram, translated it into relational schema, populated tables with sample data, and executed SQL queries.</p>
+    <p><strong>Deliverables:</strong></p>
+    <ul>
+      <li>ER Diagram with attributes, primary keys, and structural constraints.</li>
+      <li>Relational schema derived from the ER diagram using ER-to-Relational Mapping Algorithm.</li>
+      <li>Sample Data (6 records per table).</li>
+      <li>SQL Queries demonstrating complex operations.</li>
+    </ul>
+    <p><strong>Reflection:</strong> Gained practical experience in database design, implementation, and complex query execution.</p>
+  </div>
+
 </section>
 
 <section id="contact">
@@ -157,6 +172,5 @@
     document.getElementById(sectionId).classList.add("active");
   }
 </script>
-
 </body>
 </html>
