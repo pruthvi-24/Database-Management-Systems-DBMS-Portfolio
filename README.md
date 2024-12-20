@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Database Management Systems - DBMS Portfolio</title>
   <style>
-    /* General Styling */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #000; /* Black Background */
-      color: #fff; /* White text for contrast */
+      background-color: #000; 
+      color: #fff; 
     }
     header {
       background-color: #1a1a1a;
@@ -111,7 +110,6 @@
     <p><strong>Challenges and Solutions:</strong> Writing complex nested queries and debugging logical errors.</p>
     <p><strong>Reflection:</strong> Developed strong skills in SQL programming and query optimization.</p>
   </div>
-
   <div class="assignment">
     <h3>3. Normalization and Transaction Processing</h3>
     <p><strong>Assignment Name:</strong> Hospital Management System Normalization and Transactions.</p>
@@ -120,7 +118,6 @@
     <p><strong>Reflection:</strong> Learned how normalization improves database integrity and transaction management ensures consistency.</p>
   </div>
 </section>
-
 <section id="contact">
   <h2>Contact</h2>
   <p>Email: <a href="mailto:01fe23bcs228@kletech.ac.in">01fe23bcs228@kletech.ac.in</a></p>
