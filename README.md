@@ -1,4 +1,3 @@
-</style>
 </head>
 <body>
 
@@ -68,7 +67,6 @@
 <footer>
   <p>&copy; 2024 All Rights Reserved.</p>
 </footer>
-
 <script>
   function showSection(sectionId) {
     const sections = document.querySelectorAll("section");
@@ -78,6 +76,5 @@
     document.getElementById(sectionId).classList.add("active");
   }
 </script>
-
 </body>
 </html>
