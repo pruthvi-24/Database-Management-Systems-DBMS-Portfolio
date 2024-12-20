@@ -4,7 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Database Management Systems - DBMS Portfolio</title>
   <style>
-    /* General Styling */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -101,15 +100,12 @@
   <h2>Home</h2>
   <p>Welcome to my DBMS portfolio. Here, I showcase my journey and accomplishments in learning database management systems.</p>
 </section>
-
 <section id="about">
   <h2>About Me</h2>
   <p>I am an aspiring database professional passionate about designing efficient, secure, and reliable database systems.</p>
 </section>
-
 <section id="learning">
   <h2>Learning and Assignments</h2>
-
   <div class="assignment">
     <h3>1. ER Model and Relational Algebra</h3>
     <p><strong>Assignment Name:</strong> "ER Model Design for a Library System"</p>
@@ -117,7 +113,6 @@
     <p><strong>Challenges and Solutions:</strong> Efficiently handling many-to-many relationships using associative entities.</p>
     <p><strong>Reflection:</strong> Gained a solid understanding of ER modeling and relational algebra operations like SELECT and JOIN.</p>
   </div>
-
   <div class="assignment">
     <h3>2. SQL Database Creation</h3>
     <p><strong>Assignment Name:</strong> Created and queried a SQL database for pharmacy management.</p>
@@ -125,7 +120,6 @@
     <p><strong>Challenges and Solutions:</strong> Writing complex nested queries and debugging logical errors.</p>
     <p><strong>Reflection:</strong> Developed strong skills in SQL programming and query optimization.</p>
   </div>
-
   <div class="assignment">
     <h3>3. Normalization and Transaction Processing</h3>
     <p><strong>Assignment Name:</strong> Hospital Management System Normalization and Transactions.</p>
@@ -133,7 +127,6 @@
     <p><strong>Challenges and Solutions:</strong> Resolving partial and transitive dependencies for a large dataset.</p>
     <p><strong>Reflection:</strong> Learned how normalization improves database integrity and transaction management ensures consistency.</p>
   </div>
-
   <div class="assignment">
     <h3>4. Pharmaceutical Database Management</h3>
     <p><strong>Assignment Name:</strong> "Pharmaceutical Database Management System"</p>
@@ -147,7 +140,6 @@
     </ul>
     <p><strong>Reflection:</strong> Gained practical experience in database design, implementation, and complex query execution.</p>
   </div>
-
 </section>
 
 <section id="contact">
@@ -162,7 +154,6 @@
   <p>Check out the code for this portfolio on GitHub:</p>
   <a href="https://github.com/yourusername/Database-Management-Systems-DBMS-Portfolio" target="_blank">GitHub Repository Link</a>
 </div>
-
 <script>
   function showSection(sectionId) {
     const sections = document.querySelectorAll("section");
