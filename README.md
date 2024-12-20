@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Database Management Systems - DBMS Portfolio</title>
   <style>
+    /* General Styling */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -104,7 +105,7 @@
 
 <section id="about">
   <h2>About Me</h2>
-  <p>I am Pruthvi R, an aspiring database professional passionate about designing efficient, secure, and reliable database systems.</p>
+  <p>I am an aspiring database professional passionate about designing efficient, secure, and reliable database systems.</p>
 </section>
 
 <section id="learning">
