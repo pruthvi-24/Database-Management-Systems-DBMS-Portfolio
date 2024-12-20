@@ -155,6 +155,5 @@
     });
     document.getElementById(sectionId).classList.add("active");
   }
-</script>
 </body>
 </html>
