@@ -5,19 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Database Management Systems - DBMS Portfolio</title>
   <style>
+    /* General Styling */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #000; 
-      color: #fff; 
+      background-color: #000; /* Black Background */
+      color: #fff; /* White text for contrast */
     }
+
     header {
       background-color: #1a1a1a;
       color: white;
       padding: 20px 10px;
       text-align: center;
     }
+
     .nav-links {
       list-style: none;
       padding: 0;
@@ -26,36 +29,48 @@
       justify-content: center;
       gap: 20px;
     }
+
     .nav-links a {
       text-decoration: none;
       color: white;
       font-weight: bold;
-      transition: color 0.3s;
+      padding: 5px 10px;
+      transition: all 0.3s ease;
+      background-color: transparent;
+      border-radius: 4px;
     }
+
     .nav-links a:hover {
-      color: #FFD700;
+      color: #000;
+      background-color: #FFD700; /* Gold color for hover */
     }
+
     section {
       padding: 20px;
     }
+
     footer {
       background-color: #1a1a1a;
       color: white;
       text-align: center;
       padding: 10px;
     }
-  .github {
+
+    .github {
       text-align: center;
       margin-top: 30px;
     }
+
     .github a {
-      color: #00acee;
+      color: #FFD700; /* Gold color for GitHub links */
       text-decoration: none;
       font-weight: bold;
     }
+
     .github a:hover {
-      color: #FFD700;
+      color: #00acee; /* Twitter-like blue on hover */
     }
+
     .assignment {
       background-color: #1a1a1a;
       padding: 15px;
@@ -63,8 +78,18 @@
       border-radius: 8px;
       box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
     }
+
     .assignment h3 {
-      color: #FFD700;
+      color: #FFD700; /* Gold for assignment titles */
+    }
+
+    a {
+      color: #FFD700; /* Default gold color for links */
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #00acee; /* Blue on hover for consistency */
     }
   </style>
 </head>
@@ -73,7 +98,7 @@
 <header>
   <h1>Pruthvi R | DBMS Portfolio</h1>
   <p>Semester: 3 Semester | Department: Computer Science Engineering</p>
-  <p>Contact: <a href="mailto:01fe23bcs228@kletech.ac.in" style="color: white;">01fe23bcs228@kletech.ac.in</a></p>
+  <p>Contact: <a href="mailto:01fe23bcs228@kletech.ac.in" style="color: #FFD700;">01fe23bcs228@kletech.ac.in</a></p>
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About Me</a></li>
@@ -110,6 +135,7 @@
     <p><strong>Challenges and Solutions:</strong> Writing complex nested queries and debugging logical errors.</p>
     <p><strong>Reflection:</strong> Developed strong skills in SQL programming and query optimization.</p>
   </div>
+
   <div class="assignment">
     <h3>3. Normalization and Transaction Processing</h3>
     <p><strong>Assignment Name:</strong> Hospital Management System Normalization and Transactions.</p>
@@ -118,6 +144,7 @@
     <p><strong>Reflection:</strong> Learned how normalization improves database integrity and transaction management ensures consistency.</p>
   </div>
 </section>
+
 <section id="contact">
   <h2>Contact</h2>
   <p>Email: <a href="mailto:01fe23bcs228@kletech.ac.in">01fe23bcs228@kletech.ac.in</a></p>
