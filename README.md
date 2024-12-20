@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -155,5 +156,7 @@
     });
     document.getElementById(sectionId).classList.add("active");
   }
+</script>
+
 </body>
 </html>
