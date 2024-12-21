@@ -92,7 +92,6 @@
     <li><a href="#home" onclick="showSection('home')">Home</a></li>
     <li><a href="#about" onclick="showSection('about')">About Me</a></li>
     <li><a href="#learning" onclick="showSection('learning')">Learning and Assignments</a></li>
-    <li><a href="#assignments" onclick="showSection('assignments')">Assignments</a></li>
     <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
   </ul>
 </header>
@@ -111,54 +110,94 @@
   <h2>Learning and Assignments</h2>
 
   <div class="assignment">
-    <h3>1. ER Model and Relational Algebra</h3>
-    <p><strong>Assignment Name:</strong> "ER Model Design for a Library System"</p>
-    <p><strong>Description:</strong> Designed entity types, relationships, and structural constraints to represent library database schema.</p>
-    <p><strong>Challenges and Solutions:</strong> Efficiently handling many-to-many relationships using associative entities.</p>
-    <p><strong>Reflection:</strong> Gained a solid understanding of ER modeling and relational algebra operations like SELECT and JOIN.</p>
-  </div>
-
-  <div class="assignment">
-    <h3>2. SQL Database Creation</h3>
-    <p><strong>Assignment Name:</strong> Created and queried a SQL database for pharmacy management.</p>
-    <p><strong>Description:</strong> Used DDL and DML operations to create tables, insert data, and perform queries with aggregate functions.</p>
-    <p><strong>Challenges and Solutions:</strong> Writing complex nested queries and debugging logical errors.</p>
-    <p><strong>Reflection:</strong> Developed strong skills in SQL programming and query optimization.</p>
-  </div>
-
-  <div class="assignment">
-    <h3>3. Normalization and Transaction Processing</h3>
-    <p><strong>Assignment Name:</strong> Hospital Management System Normalization and Transactions.</p>
-    <p><strong>Description:</strong> Normalized hospital database to 3NF and implemented ACID-compliant transaction processing.</p>
-    <p><strong>Challenges and Solutions:</strong> Resolving partial and transitive dependencies for a large dataset.</p>
-    <p><strong>Reflection:</strong> Learned how normalization improves database integrity and transaction management ensures consistency.</p>
-  </div>
-
-  <div class="assignment">
     <h3>4. Pharmaceutical Database Management</h3>
-    <p><strong>Assignment Name:</strong> "Pharmaceutical Database Management System"</p>
-    <p><strong>Description:</strong> Designed an ER diagram, translated it into relational schema, populated tables with sample data, and executed SQL queries.</p>
-    <p><strong>Deliverables:</strong></p>
+    <p><strong>Task:</strong> Design and manage a pharmaceutical database as per the given specifications.</p>
+    <p><strong>Solution:</strong></p>
+    <h4>1. ER Diagram</h4>
+    <p>The ER diagram includes the following entities and relationships:</p>
     <ul>
-      <li>ER Diagram with attributes, primary keys, and structural constraints.</li>
-      <li>Relational schema derived from the ER diagram using ER-to-Relational Mapping Algorithm.</li>
-      <li>Sample Data (6 records per table).</li>
-      <li>SQL Queries demonstrating complex operations.</li>
+      <li><strong>Entities:</strong>
+        <ul>
+          <li><strong>Pharmaceutical_Company</strong>: Company_Name (PK), Phone_No</li>
+          <li><strong>Drug</strong>: Trade_Name (PK), Drug_Name, Formula, Company_Name (FK)</li>
+          <li><strong>Pharmacy</strong>: Pharmacy_ID (PK), Name, Address, Phone_No</li>
+          <li><strong>Patient</strong>: Patient_ID (PK), Name, Age, Address</li>
+          <li><strong>Doctor</strong>: Doctor_ID (PK), Name, Specialty, Years_Experience</li>
+          <li><strong>Prescription</strong>: Prescription_ID (PK), Doctor_ID (FK), Patient_ID (FK), Date, Quantity</li>
+          <li><strong>Contract</strong>: Contract_ID (PK), Pharmacy_ID (FK), Company_Name (FK), Start_Date, End_Date, Terms, Supervisor</li>
+        </ul>
+      </li>
+      <li><strong>Relationships:</strong>
+        <ul>
+          <li><strong>Sells</strong>: Between Pharmacy and Drug, with Price as an attribute.</li>
+          <li><strong>Prescribes</strong>: Between Doctor and Patient, linked via Prescription.</li>
+          <li><strong>Has_Contract</strong>: Between Pharmacy and Pharmaceutical_Company, linked via Contract.</li>
+        </ul>
+      </li>
     </ul>
-    <p><strong>Reflection:</strong> Gained practical experience in database design, implementation, and complex query execution.</p>
+    <h4>2. Relational Schema</h4>
+    <p>The schema derived from the ER diagram includes:</p>
+    <ul>
+      <li>Pharmaceutical_Company: Company_Name (PK), Phone_No</li>
+      <li>Drug: Trade_Name (PK), Drug_Name, Formula, Company_Name (FK)</li>
+      <li>Pharmacy: Pharmacy_ID (PK), Name, Address, Phone_No</li>
+      <li>Patient: Patient_ID (PK), Name, Age, Address</li>
+      <li>Doctor: Doctor_ID (PK), Name, Specialty, Years_Experience</li>
+      <li>Sells: Pharmacy_ID (PK, FK), Trade_Name (PK, FK), Price</li>
+      <li>Prescribes: Prescription_ID (PK), Doctor_ID (FK), Patient_ID (FK), Date, Quantity</li>
+      <li>Contract: Contract_ID (PK), Pharmacy_ID (FK), Company_Name (FK), Start_Date, End_Date, Terms, Supervisor</li>
+    </ul>
+    <h4>3. Sample Data</h4>
+    <p>Populated tables with sample records:</p>
+    <pre>
+    Pharmaceutical_Company
+    | Company_Name      | Phone_No    |
+    |-------------------|-------------|
+    | MedCorp           | 1234567890  |
+    | HealthCare Ltd.   | 9876543210  |
+    Drug
+    | Trade_Name | Drug_Name   | Formula  | Company_Name   |
+    |------------|-------------|----------|----------------|
+    | Panadol    | Paracetamol | C8H9NO2  | MedCorp        |
+    </pre>
+    <h4>4. SQL Queries</h4>
+    <p>Demonstrating concepts:</p>
+    <ul>
+      <li><strong>Multiple table join operations:</strong>
+        <pre>
+        SELECT Doctor.Name, Patient.Name, Drug.Trade_Name, Prescription.Quantity 
+        FROM Prescription 
+        JOIN Doctor ON Prescription.Doctor_ID = Doctor.Doctor_ID 
+        JOIN Patient ON Prescription.Patient_ID = Patient.Patient_ID 
+        JOIN Drug ON Prescription.Drug_ID = Drug.Trade_Name 
+        WHERE Prescription.Quantity > 2;
+        </pre>
+      </li>
+      <li><strong>Clauses & Functions:</strong>
+        <pre>
+        SELECT Pharmacy.Name, COUNT(Sells.Trade_Name) AS Drug_Count 
+        FROM Pharmacy 
+        JOIN Sells ON Pharmacy.Pharmacy_ID = Sells.Pharmacy_ID 
+        GROUP BY Pharmacy.Name 
+        HAVING COUNT(Sells.Trade_Name) > 3;
+        </pre>
+      </li>
+      <li><strong>Subqueries:</strong>
+        <pre>
+        SELECT Name FROM Pharmacy 
+        WHERE Pharmacy_ID = (SELECT Pharmacy_ID FROM Sells WHERE Trade_Name = 'Panadol');
+        </pre>
+      </li>
+      <li><strong>Views:</strong>
+        <pre>
+        CREATE VIEW DrugPrices AS 
+        SELECT Trade_Name, Pharmacy.Name, Price 
+        FROM Sells 
+        JOIN Pharmacy ON Sells.Pharmacy_ID = Pharmacy.Pharmacy_ID;
+        </pre>
+      </li>
+    </ul>
   </div>
-
-</section>
-
-<section id="assignments">
-  <h2>Assignments</h2>
-  <p>This section is dedicated to showcasing the various assignments I have completed as part of my DBMS coursework.</p>
-  <ul>
-    <li><strong>ER Model Design:</strong> Library System Database</li>
-    <li><strong>SQL Database:</strong> Pharmacy Management System</li>
-    <li><strong>Normalization:</strong> Hospital Management Database</li>
-    <li><strong>Comprehensive Project:</strong> Pharmaceutical Database</li>
-  </ul>
 </section>
 
 <section id="contact">
@@ -173,6 +212,7 @@
   <p>Check out the code for this portfolio on GitHub:</p>
   <a href="https://github.com/yourusername/Database-Management-Systems-DBMS-Portfolio" target="_blank">GitHub Repository Link</a>
 </div>
+
 <script>
   function showSection(sectionId) {
     const sections = document.querySelectorAll("section");
